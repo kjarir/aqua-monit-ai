@@ -14,13 +14,188 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      hmpi_standards: {
+        Row: {
+          bis_standard: number
+          created_at: string
+          id: string
+          metal_name: string
+          unit: string | null
+          weight_factor: number
+          who_standard: number
+        }
+        Insert: {
+          bis_standard: number
+          created_at?: string
+          id?: string
+          metal_name: string
+          unit?: string | null
+          weight_factor?: number
+          who_standard: number
+        }
+        Update: {
+          bis_standard?: number
+          created_at?: string
+          id?: string
+          metal_name?: string
+          unit?: string | null
+          weight_factor?: number
+          who_standard?: number
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          contact_email: string | null
+          created_at: string
+          full_name: string | null
+          id: string
+          organization: string | null
+          phone: string | null
+          role: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          contact_email?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          organization?: string | null
+          phone?: string | null
+          role?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          contact_email?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          organization?: string | null
+          phone?: string | null
+          role?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      water_tests: {
+        Row: {
+          arsenic: number | null
+          cadmium: number | null
+          chromium: number | null
+          collection_date: string
+          copper: number | null
+          created_at: string
+          dissolved_oxygen: number | null
+          electrical_conductivity: number | null
+          hmpi_score: number | null
+          id: string
+          iron: number | null
+          latitude: number
+          lead: number | null
+          location_name: string
+          longitude: number
+          manganese: number | null
+          mercury: number | null
+          nickel: number | null
+          notes: string | null
+          ph_level: number | null
+          pollution_level: string | null
+          status: string | null
+          temperature: number | null
+          test_name: string
+          testing_date: string
+          turbidity: number | null
+          updated_at: string
+          user_id: string
+          zinc: number | null
+        }
+        Insert: {
+          arsenic?: number | null
+          cadmium?: number | null
+          chromium?: number | null
+          collection_date: string
+          copper?: number | null
+          created_at?: string
+          dissolved_oxygen?: number | null
+          electrical_conductivity?: number | null
+          hmpi_score?: number | null
+          id?: string
+          iron?: number | null
+          latitude: number
+          lead?: number | null
+          location_name: string
+          longitude: number
+          manganese?: number | null
+          mercury?: number | null
+          nickel?: number | null
+          notes?: string | null
+          ph_level?: number | null
+          pollution_level?: string | null
+          status?: string | null
+          temperature?: number | null
+          test_name: string
+          testing_date: string
+          turbidity?: number | null
+          updated_at?: string
+          user_id: string
+          zinc?: number | null
+        }
+        Update: {
+          arsenic?: number | null
+          cadmium?: number | null
+          chromium?: number | null
+          collection_date?: string
+          copper?: number | null
+          created_at?: string
+          dissolved_oxygen?: number | null
+          electrical_conductivity?: number | null
+          hmpi_score?: number | null
+          id?: string
+          iron?: number | null
+          latitude?: number
+          lead?: number | null
+          location_name?: string
+          longitude?: number
+          manganese?: number | null
+          mercury?: number | null
+          nickel?: number | null
+          notes?: string | null
+          ph_level?: number | null
+          pollution_level?: string | null
+          status?: string | null
+          temperature?: number | null
+          test_name?: string
+          testing_date?: string
+          turbidity?: number | null
+          updated_at?: string
+          user_id?: string
+          zinc?: number | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      calculate_hmpi_score: {
+        Args: {
+          p_arsenic?: number
+          p_cadmium?: number
+          p_chromium?: number
+          p_copper?: number
+          p_iron?: number
+          p_lead?: number
+          p_manganese?: number
+          p_mercury?: number
+          p_nickel?: number
+          p_zinc?: number
+        }
+        Returns: number
+      }
     }
     Enums: {
       [_ in never]: never

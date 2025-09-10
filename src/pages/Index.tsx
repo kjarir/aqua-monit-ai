@@ -91,7 +91,12 @@ const Index = () => {
               Ensuring water safety through advanced scientific analysis.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" size="lg" className="text-lg">
+              <Button 
+                variant="secondary" 
+                size="lg" 
+                className="text-lg"
+                onClick={() => window.location.href = '/auth'}
+              >
                 <Users className="mr-2 h-5 w-5" />
                 Access Dashboard
               </Button>
