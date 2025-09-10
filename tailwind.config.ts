@@ -22,10 +22,12 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          hover: "hsl(var(--secondary-hover))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -47,6 +49,22 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        safe: {
+          DEFAULT: "hsl(var(--safe))",
+          foreground: "hsl(var(--safe-foreground))",
+        },
+        moderate: {
+          DEFAULT: "hsl(var(--moderate))",
+          foreground: "hsl(var(--moderate-foreground))",
+        },
+        critical: {
+          DEFAULT: "hsl(var(--critical))",
+          foreground: "hsl(var(--critical-foreground))",
+        },
+        unsafe: {
+          DEFAULT: "hsl(var(--unsafe))",
+          foreground: "hsl(var(--unsafe-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -59,9 +77,20 @@ export default {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
+        lg: "var(--radius-lg)",
+        DEFAULT: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        xl: "var(--radius-xl)",
+      },
+      backgroundImage: {
+        'gradient-water': 'var(--gradient-water)',
+        'gradient-earth': 'var(--gradient-earth)', 
+        'gradient-hero': 'var(--gradient-hero)',
+      },
+      boxShadow: {
+        'water': 'var(--shadow-water)',
+        'card': 'var(--shadow-card)',
       },
       keyframes: {
         "accordion-down": {

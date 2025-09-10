@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* HMPI Water Quality Assessment Design System - Scientific & Environmental Theme */
 
 @layer base {
   :root {
+    /* Base colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 213 27% 84%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card system */
+    --card: 210 100% 99%;
+    --card-foreground: 220 39% 11%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 210 100% 99%;
+    --popover-foreground: 220 39% 11%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Water-inspired primary colors */
+    --primary: 207 90% 54%;
     --primary-foreground: 210 40% 98%;
+    --primary-hover: 207 90% 48%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Environmental secondary colors */
+    --secondary: 142 72% 29%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-hover: 142 72% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Alert system for contamination levels */
+    --safe: 142 76% 36%;
+    --safe-foreground: 210 40% 98%;
+    --moderate: 45 93% 47%;
+    --moderate-foreground: 220 39% 11%;
+    --critical: 14 91% 43%;
+    --critical-foreground: 210 40% 98%;
+    --unsafe: 348 83% 47%;
+    --unsafe-foreground: 210 40% 98%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Neutral system */
+    --muted: 213 27% 84%;
+    --muted-foreground: 220 39% 11%;
 
-    --destructive: 0 84.2% 60.2%;
+    --accent: 213 27% 84%;
+    --accent-foreground: 220 39% 11%;
+
+    --destructive: 348 83% 47%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 210 40% 94%;
+    --input: 210 40% 94%;
+    --ring: 207 90% 54%;
 
-    --radius: 0.5rem;
+    /* Gradients for environmental themes */
+    --gradient-water: linear-gradient(135deg, hsl(207 90% 54%), hsl(197 71% 48%));
+    --gradient-earth: linear-gradient(135deg, hsl(142 72% 29%), hsl(142 76% 36%));
+    --gradient-hero: linear-gradient(135deg, hsl(207 90% 54%) 0%, hsl(197 71% 48%) 50%, hsl(142 72% 29%) 100%);
+    
+    /* Shadows for depth */
+    --shadow-water: 0 10px 30px -10px hsl(207 90% 54% / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(220 39% 11% / 0.1);
+    
+    /* Border radius system */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
 
     --sidebar-background: 0 0% 98%;
 
